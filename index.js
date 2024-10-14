@@ -10,13 +10,21 @@ celsiusTemp = celsiusTemp(farenheitTemp)
 
 /*Created a function that will output a pop-up message to the user based on the specified temp. 
 The `else if` statements allows each condition to be checked until it finds the one that suits it. 
-If the condition is never met, nothing will happen.*/
+If the condition is never met, it will return undefined.*/
 const describeTemperature = (Temp2,Temp1) => {
-if (Temp2<32) {alert(`${Temp1} is ${Temp2} in degrees Celsius, it is very cold outside`)}
-else if (Temp2 < 64) {alert(`${Temp1} is ${Temp2} in degrees Celsius, it is cold outside`)}
-else if (Temp2<86) {alert(`${Temp1} is ${Temp2} in degrees Celsius, it is warm outside`)}
-else if (Temp2<100) {alert(`${Temp1} is ${Temp2} in degrees Celsius, it is hot outside`)}
-else if (Temp2>=100) {alert(`${Temp1} is ${Temp2} in degrees Celsius, it is very hot outside`)}
+  if (Temp2<32) {alert(`${Temp1} is ${Temp2} in degrees Celsius, it is very cold outside`)}
+  else if (Temp2 < 64) {
+    alert(`${Temp1} is ${Temp2} in degrees Celsius, it is cold outside`)
+  }
+  else if (Temp2 < 86) {
+    alert(`${Temp1} is ${Temp2} in degrees Celsius, it is warm outside`)
+  }
+  else if (Temp2 < 100) {
+    alert(`${Temp1} is ${Temp2} in degrees Celsius, it is hot outside`)
+  }
+  else if (Temp2 >= 100) {
+    alert(`${Temp1} is ${Temp2} in degrees Celsius, it is very hot outside`)
+  }
 }
 
 // Invoking the function
